@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-tournament",
+  "version": "1.0.0",
+  "description": "relevel nodejs tournament season 2",
+  "main": "src/server/index.js",
+  "scripts": {
+    "dev": "run-s start-db server",
+    "server": "node src/server/index.js",
+    "start-db": "brew services start mongodb-community@4.4",
+    "stop-db": "brew services stop mongodb-community@4.4",
+    "mongo": "mongo"
+  },
+  "keywords": [
+    "Express",
+    "RestAPI",
+    "Booking",
+    "MongoDB"
+  ],
+  "author": "Sourav Roy",
+  "email": "sauravroy26@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "mongodb": "^4.6.0",
+    "mongoose": "^5.13.2",
+    "node-cache": "^5.1.2",
+    "npm-run-all": "^4.1.5"
+  }
+}
